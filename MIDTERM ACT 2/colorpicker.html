@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Color Grid</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Color Picker Grid</h1>
+
+  <!-- Color buttons -->
+  <div id="palette" class="palette" role="group" aria-label="Pick a color">
+    <button class="color" data-color="red"    style="background:red"    aria-label="Red"></button>
+    <button class="color" data-color="green"  style="background:green"  aria-label="Green"></button>
+    <button class="color" data-color="blue"   style="background:blue"   aria-label="Blue"></button>
+    <button class="color" data-color="yellow" style="background:gold"   aria-label="Yellow"></button>
+  </div>
+
+  <div class="actions">
+    <button id="clear" type="button">Clear Grid</button>
+  </div>
+
+  <!-- Paintable grid -->
+  <div id="grid" class="grid" aria-label="Paintable grid"></div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
